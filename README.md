@@ -1,6 +1,6 @@
 # hackerrank-python
 
-[make-it-anagram-mglines](https://www.hackerrank.com/challenges/make-it-anagram-mglines/problem)
+### [make-it-anagram-mglines](https://www.hackerrank.com/challenges/make-it-anagram-mglines/problem)
 ```
 w1 = raw_input()
 w2 = raw_input()
@@ -11,7 +11,7 @@ for letter in "abcdefghijklmnopqrstuvwxyz":
 print total
 ```
 
-[python-time-delta](https://www.hackerrank.com/challenges/python-time-delta/problem)
+### [python-time-delta](https://www.hackerrank.com/challenges/python-time-delta/problem)
 ```
 #!/bin/python3
 
@@ -46,12 +46,12 @@ if __name__ == "__main__":
         print(delta)
 ```
 		
-[any-or-all](https://www.hackerrank.com/challenges/any-or-all/problem)
+### [any-or-all](https://www.hackerrank.com/challenges/any-or-all/problem)
 ```
 _,a=raw_input(),raw_input().split()
 print all(map(lambda x: int(x)>0,a)) and any(map(lambda x: all(map(lambda y: x[y]==x[-y-1], xrange(len(x)/2))),a))		
 ```
-[py-collections-deque](https://www.hackerrank.com/challenges/py-collections-deque/problem)
+### [py-collections-deque](https://www.hackerrank.com/challenges/py-collections-deque/problem)
 ```
 from collections import deque
 d=deque()
@@ -60,7 +60,7 @@ for _ in range (int(input())):
     getattr(d,inp[0])(*[inp[1]] if len (inp)> 1 else[])
 print(*[item for item in d])    
 ```
-[piling-up](https://www.hackerrank.com/challenges/piling-up/problem)
+### [piling-up](https://www.hackerrank.com/challenges/piling-up/problem)
 ```
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 for t in range(input()):
@@ -75,7 +75,7 @@ for t in range(input()):
     print "Yes" if i == l - 1 else "No"
 	
 ```
-[most-commons](https://www.hackerrank.com/challenges/most-commons/problem)
+### [most-commons](https://www.hackerrank.com/challenges/most-commons/problem)
 ```	
 #!/bin/python3
 
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 		
 ```
 
-[python-sort-sort](https://www.hackerrank.com/challenges/python-sort-sort/problem)
+### [python-sort-sort](https://www.hackerrank.com/challenges/python-sort-sort/problem)
 ```	
 #!/bin/python3
 
@@ -107,24 +107,24 @@ for i in sorted(lst, key=itemgetter(int(input()))):
 	
 ```
 
-[set-union](https://www.hackerrank.com/challenges/py-set-union/problem)
+### [set-union](https://www.hackerrank.com/challenges/py-set-union/problem)
 ```
 	print(input() == 0 or len(set(input().split()).union(input() == 0 or input().split())))
 ```
 
-[intersection-operation](https://www.hackerrank.com/challenges/py-set-intersection-operation/problem)
+### [intersection-operation](https://www.hackerrank.com/challenges/py-set-intersection-operation/problem)
 ```	
 	print(input()==0 or len(set(input().split())&(input()==0 or set(input().split()))))
 ```
 
 	
-[set-difference-operation](https://www.hackerrank.com/challenges/py-set-difference-operation/problem)
+### [set-difference-operation](https://www.hackerrank.com/challenges/py-set-difference-operation/problem)
 ```	
 	_,a,_,b=[set(input().split()) for _ in '1234'];print(len(a-b))
 
 ```
 
-[set-symmetric-difference-operation](https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem)
+### [set-symmetric-difference-operation](https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem)
 ```	
 a=int(input())
 a1=input()
@@ -141,7 +141,7 @@ print(len(l))
 
 ```
 
-[matrix-script](https://www.hackerrank.com/challenges/matrix-script/problem)
+### [matrix-script](https://www.hackerrank.com/challenges/matrix-script/problem)
 ```
 import re
 
@@ -156,7 +156,7 @@ for z in zip(*a):
 print(re.sub(r"(?<=\w)([^\w]+)(?=\w)", " ", b))
 ```
 
-[validating-postalcode](https://www.hackerrank.com/challenges/validating-postalcode/problem)
+### [validating-postalcode](https://www.hackerrank.com/challenges/validating-postalcode/problem)
 ```
 import re
 
@@ -169,7 +169,7 @@ print(bool(re.match(
 )))
 ```
 
-[python-tuples](https://www.hackerrank.com/challenges/python-tuples/problem)
+### [python-tuples](https://www.hackerrank.com/challenges/python-tuples/problem)
 ```
 if __name__ == '__main__':
     n = int(input())
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     print hash(t)
 ```
     
-[list-comprehensions](https://www.hackerrank.com/challenges/list-comprehensions/problem)
+### [list-comprehensions](https://www.hackerrank.com/challenges/list-comprehensions/problem)
 ```
 if __name__ == '__main__':
     x = int(raw_input())
@@ -192,7 +192,7 @@ if __name__ == '__main__':
 
 ```
 
-[find-second-maximum-number-in-a-list](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem)
+### [find-second-maximum-number-in-a-list](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem)
 ```	
 i = int(input())
 lis = list(map(int,raw_input().strip().split()))[:i]
@@ -204,7 +204,7 @@ print max(lis)
 
 ```
 
-[nested-list](https://www.hackerrank.com/challenges/nested-list/problem)
+### [nested-list](https://www.hackerrank.com/challenges/nested-list/problem)
 ```
 marksheet = []
 for _ in range(0,int(input())):
@@ -214,7 +214,7 @@ second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
 print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))
 ```
 
-[finding-the-percentage](https://www.hackerrank.com/challenges/finding-the-percentage/problem)
+### [finding-the-percentage](https://www.hackerrank.com/challenges/finding-the-percentage/problem)
 ```
 if __name__ == '__main__':
     n = int(raw_input())
@@ -229,14 +229,14 @@ if __name__ == '__main__':
     print("{0:.2f}".format(sum(query_scores)/(len(query_scores))))
 ```
 
-[designer-door-mat](https://www.hackerrank.com/challenges/designer-door-mat/problem)
+### [designer-door-mat](https://www.hackerrank.com/challenges/designer-door-mat/problem)
 ```	
 n, m = map(int,input().split())
 pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]
 print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
 ```
 
-[merge-the-tools](https://www.hackerrank.com/challenges/merge-the-tools/problem)
+### [merge-the-tools](https://www.hackerrank.com/challenges/merge-the-tools/problem)
 ```
 def merge_the_tools(S,N):
     for part in zip(*[iter(S)] * N):
@@ -245,7 +245,8 @@ def merge_the_tools(S,N):
     
 ```
 	
-[the-minion-game](https://www.hackerrank.com/challenges/the-minion-game/problem)
+### [the-minion-game](https://www.hackerrank.com/challenges/the-minion-game/problem)
+
 ```	
     def minion_game(s):
     vowels = 'AEIOU'
@@ -263,12 +264,12 @@ def merge_the_tools(S,N):
     elif kevsc < stusc:
         print "Stuart", stusc
     else:
-        print "Draw"
-    
-```	
+        print "Draw"    
+```
+
 
 	
-[map-and-lambda-expression](https://www.hackerrank.com/challenges/map-and-lambda-expression/problem)
+###  [map-and-lambda-expression](https://www.hackerrank.com/challenges/map-and-lambda-expression/problem)
 
 ```
 	cube = lambda x: pow(x,3)
@@ -278,9 +279,9 @@ def fibonacci(n):
     for i in range(2,n):
         lis.append(lis[i-2] + lis[i-1])
     return(lis[0:n])
-	```
+```
 	
-[validate-list-of-email-address-with-filter](https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem)
+### [validate-list-of-email-address-with-filter](https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem)
 
 ```	
 	def fun(email):
@@ -302,7 +303,7 @@ def fibonacci(n):
 ```
 
 	
-[reduce-function](https://www.hackerrank.com/challenges/reduce-function/problem)
+### [reduce-function](https://www.hackerrank.com/challenges/reduce-function/problem)
 
 ```	
 	import operator
@@ -320,22 +321,24 @@ def product(fracs):
     print(*result)
 ```
 
-[capitalize](https://www.hackerrank.com/challenges/capitalize/problem)
+
+### [capitalize](https://www.hackerrank.com/challenges/capitalize/problem)
+
 ```
 def capitalize(s):
     for x in s[:].split():
-        
         s = s.replace(x, x.capitalize())
-
-    return s
-	
+    return s	
 	if __name__ == '__main__':
     string = input()
     capitalized_string = capitalize(string)
     print(capitalized_string)
 ```
 
-[find-a-string](https://www.hackerrank.com/challenges/find-a-string/problem)
+
+
+### [find-a-string](https://www.hackerrank.com/challenges/find-a-string/problem)
+
 ```
 	if __name__ == '__main__':
     string = input().strip()
@@ -356,7 +359,8 @@ def capitalize(s):
 ```
 
 	
-[text-wrap](https://www.hackerrank.com/challenges/text-wrap/problem)
+### [text-wrap](https://www.hackerrank.com/challenges/text-wrap/problem)
+
 ```	
 	if __name__ == '__main__':
     string, max_width = input(), int(input())
@@ -369,7 +373,8 @@ def capitalize(s):
 ```     
 
 	 
-[python-string-formatting](https://www.hackerrank.com/challenges/python-string-formatting/problem)
+### [python-string-formatting](https://www.hackerrank.com/challenges/python-string-formatting/problem)
+
 ```
 if __name__ == '__main__':
     n = int(raw_input())
