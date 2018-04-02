@@ -1,6 +1,7 @@
 # hackerrank-python
 
 https://www.hackerrank.com/challenges/make-it-anagram-mglines/problem
+```
 w1 = raw_input()
 w2 = raw_input()
 
@@ -8,9 +9,10 @@ total = 0
 for letter in "abcdefghijklmnopqrstuvwxyz":
     total += abs(w1.count(letter) - w2.count(letter))
 print total
-
+```
 
 https://www.hackerrank.com/challenges/python-time-delta/problem
+```
 #!/bin/python3
 
 import sys
@@ -42,21 +44,24 @@ if __name__ == "__main__":
         t2 = input().strip()
         delta = time_delta(t1, t2)
         print(delta)
-
+```
 		
-https://www.hackerrank.com/challenges/any-or-all/problem		
+https://www.hackerrank.com/challenges/any-or-all/problem
+```
 _,a=raw_input(),raw_input().split()
 print all(map(lambda x: int(x)>0,a)) and any(map(lambda x: all(map(lambda y: x[y]==x[-y-1], xrange(len(x)/2))),a))		
-
+```
 https://www.hackerrank.com/challenges/py-collections-deque/problem
+```
 from collections import deque
 d=deque()
 for _ in range (int(input())):
     inp=input().split()
     getattr(d,inp[0])(*[inp[1]] if len (inp)> 1 else[])
 print(*[item for item in d])    
-
+```
 https://www.hackerrank.com/challenges/piling-up/problem
+```
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 for t in range(input()):
     input()
@@ -69,10 +74,10 @@ for t in range(input()):
         i += 1
     print "Yes" if i == l - 1 else "No"
 	
-	
-	https://www.hackerrank.com/challenges/most-commons/problem
-	
-	#!/bin/python3
+```
+https://www.hackerrank.com/challenges/most-commons/problem
+```	
+#!/bin/python3
 
 import sys
 from collections import Counter, OrderedDict
@@ -84,10 +89,11 @@ if __name__ == "__main__":
         print(" ".join(str(e) for e in element), sep=" ")
 		
 		
-		
-	https://www.hackerrank.com/challenges/python-sort-sort/problem
-	
-	#!/bin/python3
+```
+
+https://www.hackerrank.com/challenges/python-sort-sort/problem
+```	
+#!/bin/python3
 
 import sys
 
@@ -112,10 +118,11 @@ for i in sorted(lst, key=itemgetter(int(input()))):
 	
 	_,a,_,b=[set(input().split()) for _ in '1234'];print(len(a-b))
 
-	
-	https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem
-	
-	a=int(input())
+```
+
+https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem
+```	
+a=int(input())
 a1=input()
 b=int(input())
 b1=input()
@@ -128,10 +135,10 @@ ms2=set(k2n)
 l=ms1.symmetric_difference(ms2)
 print(len(l))
 
-
+```
 
 https://www.hackerrank.com/challenges/matrix-script/problem
-
+```
 import re
 
 n, m = map(int, input().split())
@@ -143,8 +150,10 @@ for z in zip(*a):
     b += "".join(z)
 
 print(re.sub(r"(?<=\w)([^\w]+)(?=\w)", " ", b))
+```
 
 https://www.hackerrank.com/challenges/validating-postalcode/problem
+```
 import re
 
 print(bool(re.match(
@@ -154,8 +163,10 @@ print(bool(re.match(
     r'[1-9]\d{5}'
     r'$', input()
 )))
+```
 
 https://www.hackerrank.com/challenges/python-tuples/problem
+```
 if __name__ == '__main__':
     n = int(input())
     input_line = raw_input()
@@ -164,10 +175,10 @@ if __name__ == '__main__':
         input_list[i] = int(input_list[i])
     t = tuple(input_list)
     print hash(t)
-
+```
     
 https://www.hackerrank.com/challenges/list-comprehensions/problem
-
+```
 if __name__ == '__main__':
     x = int(raw_input())
     y = int(raw_input())
@@ -175,10 +186,11 @@ if __name__ == '__main__':
     n = int(raw_input())
     print ([[a,b,c] for a in range(x+1) for b in range(y+1) for c in range(z+1) if a + b + c != n ])
 
-	
-	https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
-	
-	i = int(input())
+```
+
+https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
+```	
+i = int(input())
 lis = list(map(int,raw_input().strip().split()))[:i]
 z = max(lis)
 while max(lis) == z:
@@ -186,15 +198,20 @@ while max(lis) == z:
 
 print max(lis)
 
+```
+
 https://www.hackerrank.com/challenges/nested-list/problem
+```
 marksheet = []
 for _ in range(0,int(input())):
     marksheet.append([input(), float(input())])
 
 second_highest = sorted(list(set([marks for name, marks in marksheet])))[1]
 print('\n'.join([a for a,b in sorted(marksheet) if b == second_highest]))
+```
 
 https://www.hackerrank.com/challenges/finding-the-percentage/problem
+```
 if __name__ == '__main__':
     n = int(raw_input())
     student_marks = {}
@@ -206,24 +223,27 @@ if __name__ == '__main__':
     query_name = raw_input()
     query_scores = student_marks[query_name]
     print("{0:.2f}".format(sum(query_scores)/(len(query_scores))))
-	
-	https://www.hackerrank.com/challenges/designer-door-mat/problem
-	
-	n, m = map(int,input().split())
+```
+
+https://www.hackerrank.com/challenges/designer-door-mat/problem
+```	
+n, m = map(int,input().split())
 pattern = [('.|.'*(2*i + 1)).center(m, '-') for i in range(n//2)]
 print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
-
+```
 
 https://www.hackerrank.com/challenges/merge-the-tools/problem
+```
 def merge_the_tools(S,N):
     for part in zip(*[iter(S)] * N):
         d = dict()
         print(''.join([ d.setdefault(c, c) for c in part if c not in d ]))
     # your code goes here
+```
 	
-	https://www.hackerrank.com/challenges/the-minion-game/problem
-	
-	def minion_game(s):
+https://www.hackerrank.com/challenges/the-minion-game/problem
+```	
+    def minion_game(s):
     vowels = 'AEIOU'
 
     kevsc = 0
@@ -240,10 +260,11 @@ def merge_the_tools(S,N):
         print "Stuart", stusc
     else:
         print "Draw"
-    # your code goes here
+    
+```	
 	
-	
-	https://www.hackerrank.com/challenges/map-and-lambda-expression/problem
+https://www.hackerrank.com/challenges/map-and-lambda-expression/problem
+```
 	cube = lambda x: pow(x,3)# complete the lambda function 
 def fibonacci(n):
     
@@ -251,10 +272,10 @@ def fibonacci(n):
     for i in range(2,n):
         lis.append(lis[i-2] + lis[i-1])
     return(lis[0:n])
+	```
 	
-	
-	https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem
-	
+https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem
+```	
 	def fun(email):
     try:
         username, url = email.split("@")
@@ -271,10 +292,11 @@ def fibonacci(n):
     return True
 
     # return True if s is a valid email, else return False
+```
+
 	
-	
-	https://www.hackerrank.com/challenges/reduce-function/problem
-	
+https://www.hackerrank.com/challenges/reduce-function/problem
+```	
 	import operator
 	from fractions import Fraction
 from functools import reduce
@@ -288,10 +310,10 @@ def product(fracs):
         fracs.append(Fraction(*map(int, input().split())))
     result = product(fracs)
     print(*result)
-
+```
 
 https://www.hackerrank.com/challenges/capitalize/problem
-
+```
 def capitalize(s):
     for x in s[:].split():
         
@@ -303,9 +325,10 @@ def capitalize(s):
     string = input()
     capitalized_string = capitalize(string)
     print(capitalized_string)
-	
-	https://www.hackerrank.com/challenges/find-a-string/problem
-	
+```
+
+https://www.hackerrank.com/challenges/find-a-string/problem
+	```
 	if __name__ == '__main__':
     string = input().strip()
     sub_string = input().strip()
@@ -322,10 +345,11 @@ def capitalize(s):
             counter+=1
         else: break
     return counter
+```
 
 	
-	https://www.hackerrank.com/challenges/text-wrap/problem
-	
+https://www.hackerrank.com/challenges/text-wrap/problem
+```	
 	if __name__ == '__main__':
     string, max_width = input(), int(input())
     result = wrap(string, max_width)
@@ -334,15 +358,16 @@ def capitalize(s):
 	def wrap(s,w):
     l = " ".join(textwrap.wrap(s,w))
     return textwrap.fill(l,w)
-     
+```     
 	 
 	 https://www.hackerrank.com/challenges/python-string-formatting/problem
-	 if __name__ == '__main__':
+```
+if __name__ == '__main__':
     n = int(raw_input())
     print_formatted(n)
 	def print_formatted(n):
     width = len("{0:b}".format(n))
     for i in xrange(1,n+1):
         print "{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width)
-	 
+	``` 
 	 
