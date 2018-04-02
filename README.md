@@ -281,6 +281,7 @@ def fibonacci(n):
 	```
 	
 [validate-list-of-email-address-with-filter](https://www.hackerrank.com/challenges/validate-list-of-email-address-with-filter/problem)
+
 ```	
 	def fun(email):
     try:
@@ -302,6 +303,7 @@ def fibonacci(n):
 
 	
 [reduce-function](https://www.hackerrank.com/challenges/reduce-function/problem)
+
 ```	
 	import operator
 	from fractions import Fraction
@@ -334,7 +336,7 @@ def capitalize(s):
 ```
 
 [find-a-string](https://www.hackerrank.com/challenges/find-a-string/problem)
-	```
+```
 	if __name__ == '__main__':
     string = input().strip()
     sub_string = input().strip()
@@ -352,7 +354,7 @@ def capitalize(s):
         else: break
     return counter
 ```
-```
+
 	
 [text-wrap](https://www.hackerrank.com/challenges/text-wrap/problem)
 ```	
@@ -376,5 +378,5 @@ if __name__ == '__main__':
     width = len("{0:b}".format(n))
     for i in xrange(1,n+1):
         print "{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width)
-	``` 
+``` 
 	 
