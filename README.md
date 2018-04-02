@@ -105,9 +105,10 @@ lst = [[int(i) for i in input().split()] for _ in range(N)]
 for i in sorted(lst, key=itemgetter(int(input()))):
     print(*i)
 	
-```	
+```
+
 [set-union](https://www.hackerrank.com/challenges/py-set-union/problem)
-	```
+```
 	print(input() == 0 or len(set(input().split()).union(input() == 0 or input().split())))
 ```
 
